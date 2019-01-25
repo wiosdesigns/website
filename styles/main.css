@@ -1,0 +1,5 @@
+header{
+  position: absolute;
+  display: grid;
+  background: var(--dark-color);
+}
