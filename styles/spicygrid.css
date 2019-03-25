@@ -215,6 +215,19 @@ header input:checked ~ nav{
     text-align: center;
   }
 }
+@media only screen and (min-width: 200mm) {
+  header>input,header>label{
+    display: none;
+  }
+  header>nav{
+    display: inline-block;
+    grid-column: span 1;
+  }
+  header>nav>a{
+    padding: 1mm 6mm;
+  }
+}
+
 @keyframes fadein{
   from{opacity: 0;}
   to{opacity: 1;}
