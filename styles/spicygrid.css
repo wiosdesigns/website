@@ -181,10 +181,14 @@ header>input{
 }
 header>label{
   display: inline-block;
-  height: 5mm;
-  width: 7.5mm;
+  height: 6mm;
+  width: 8mm;
   margin: 1.5mm;
-  background: url(/assets/menu50.png);
+  background: url(/assets/menuoff.svg);
+  background-size: contain;
+}
+header input:checked ~ label{
+  background: url(/assets/menuon.svg);
   background-size: contain;
 }
 header>nav{
