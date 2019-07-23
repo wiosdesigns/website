@@ -1,25 +1,27 @@
 :root{
-  --dark-color: #06090b;
-  --theme-color: #0070bb;
+  --dark-color: #00060a;
+  --theme-color: #0060a0;
   --light-color: #ffffff;
+  --d2: #000f1a;
 }
 * {
   box-sizing: border-box;
 }
 @font-face {
   font-family: font1;
-  src: url(/assets/jost.otf);
+  src: url(/assets/hind.ttf);
 }
 @font-face {
   font-family: font2;
-  src: url(/assets/monoid.ttf);
+  src: url(/assets/jost.otf);
 }
 body {
   font-family: font1;
   padding: 0px;
   margin: 0px;
   font-size: 4mm;
-  color: var(--dark-color);
+  background: var(--dark-color);
+  color: var(--light-color);
 }
 
 
@@ -200,11 +202,12 @@ header>nav>a{
   color: var(--light-color);
   font-size: 5mm;
   display: inline-block;
-  padding: 4mm 6mm;
+  padding: 6mm;
   text-decoration: none;
+  font-family: font2;
 }
 header>nav>a:hover{
-  background: var(--theme-color);
+  opacity: 0.8;
 }
 header input:checked ~ nav{
   display: inline-block;
@@ -228,11 +231,40 @@ header input:checked ~ nav{
     grid-column: span 1;
   }
   header>nav>a{
-    padding: 1mm 6mm;
+    padding: 2mm 6mm;
   }
 }
 
 @keyframes fadein{
   from{opacity: 0;}
   to{opacity: 1;}
+}
+a.btn{
+  text-decoration: none;
+  display: inline-block;
+  background: var(--theme-color);
+  color: var(--light-color);
+  padding: 2mm 5mm;
+  border-radius: 10mm;
+  margin: 5mm;
+}
+.pagetitle{
+  text-decoration: underline;
+  text-decoration-color: var(--theme-color);
+}
+.pflink{
+  background: var(--d2);
+  display: inline-block;
+  padding: 2mm 5mm;
+  margin: 2mm;
+  border-radius: 10mm;
+}
+.logos{
+}
+.logo{
+  width: 90%;
+  max-width: 50mm;
+  margin: 2mm;
+  border-radius: 2mm;
+  vertical-align: middle;
 }
